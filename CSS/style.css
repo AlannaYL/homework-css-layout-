@@ -1,0 +1,46 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 搜尋欄--------------------------------------------- */
+#header {
+    width: 100%;
+    height: 56px;
+    background: lightblue;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+#header .Logo {
+    width: 90px;
+    height: 20px;
+    background: black;
+    position: relative;
+}
+
+#header img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* tag區域與導覽區域-------------------------------------- */
+#container {
+    width: 100%;
+    height: 100%;
+    /* background: lightpink; */
+}
+
+/* 側邊欄位---------------------------------------------- */
+#sidebar {
+    width: 256px;
+    /* background: lightgreen; */
+    position: fixed;
+    top: -120px;
+    bottom: -120px;
+    left: 0;
+    z-index: 1;
+}
