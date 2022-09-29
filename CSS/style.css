@@ -6,19 +6,29 @@ body {
 
 /* 搜尋欄--------------------------------------------- */
 #header {
+    box-sizing: border-box;
     width: 100%;
     height: 56px;
     background: lightblue;
     position: fixed;
     top: 0;
+    overflow: hidden;
     z-index: 2;
 }
 
+#header .hamburger {
+    width: 10%;
+    height: 10%;
+    float: left;
+    /* margin: 10px 0 10px 0; */
+    padding: 1rem 0;
+}
+
 #header .Logo {
-    width: 90px;
+    width: 25%;
     height: 20px;
-    background: black;
-    position: relative;
+    float: left;
+    padding: 0.5rem 1rem 0rem;
 }
 
 #header img {
@@ -26,6 +36,10 @@ body {
     max-width: 100%;
 }
 
+#header .search {
+    width: 100%;
+    height: 50px;
+}
 
 /* tag區域與導覽區域-------------------------------------- */
 #container {
