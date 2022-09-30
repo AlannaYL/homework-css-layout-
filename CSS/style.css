@@ -10,25 +10,21 @@ body {
     width: 100%;
     height: 56px;
     background: lightblue;
+    text-align: center;
     position: fixed;
     top: 0;
-    overflow: hidden;
     z-index: 2;
 }
 
-#header .hamburger {
-    width: 10%;
-    height: 10%;
-    float: left;
-    /* margin: 10px 0 10px 0; */
-    padding: 1rem 0;
-}
-
 #header .Logo {
-    width: 25%;
-    height: 20px;
-    float: left;
+    width: auto;
+    height: 24px;
+    margin: 0;
     padding: 0.5rem 1rem 0rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
 }
 
 #header img {
@@ -36,9 +32,24 @@ body {
     max-width: 100%;
 }
 
+#header i {
+    font-size: 2rem;
+    display: inline;
+    text-align: center;
+}
+
 #header .search {
-    width: 100%;
+    display: inline;
+    width: 0;
     height: 50px;
+    margin: 0;
+    position: absolute;
+    font-size: 0;
+}
+
+#header .search input {
+    width: 572px;
+    height: 40px;
 }
 
 /* tag區域與導覽區域-------------------------------------- */
