@@ -40,23 +40,26 @@ body {
     max-height: 100%;
     max-width: 100%;
     top: 1rem;
-
 }
 
 
 #header .search {
     display: inline;
-    width: 0;
     height: 50px;
-    margin: 0 .5rem;
+    margin: auto;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+#header .search i {
     font-size: 1.5rem;
 }
 
 #header .search input {
     width: 572px;
     height: 40px;
-
 }
 
 /* tag區域與導覽區域-------------------------------------- */
