@@ -6,6 +6,7 @@ body {
 
 /* 搜尋欄--------------------------------------------- */
 #header {
+    box-sizing: border-box;
     background: lightcoral;
     width: 100%;
     height: 56px;
@@ -18,32 +19,84 @@ body {
     z-index: 10;
 }
 
-#header .Yticon {
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
+/* 設置左邊欄位跟Logo*/
+#header .leFt {
+    width: 30%;
+    height: 56px;
+    position: absolute;
+    text-align: left;
+    font-size: 0;
 }
 
 #header .Logo {
+    display: inline-block;
     height: 40px;
     width: 120px;
-    padding: 18px 14px 18px 16px;
+    padding: 10px;
 }
 
-#header .riGht {
-    width: 225px;
+#header i {
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    vertical-align: 50%;
+    margin: 0;
+    width: 40px;
     height: 40px;
-    display: inline;
+}
+
+#header .searchBar {
+    width: 45%;
+    height: 40px;
+    position: absolute;
+    left: 45%;
+    transform: translate(-50%, 0);
+    padding: 0 0 .5rem;
+
+}
+
+#header .searchBar input {
+    width: 80%;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+
+}
+
+#header .searchBar button {
+    width: auto;
+    height: 46px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    text-align: center;
+    transform: translateY(-52%);
+}
+
+
+
+/* 右邊的使用者與icon */
+#header .riGht {
+    width: 10%;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 0;
+    margin: auto;
+
 }
 
 #header .user {
+    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin: 0%;
     overflow: hidden;
-    position: relative;
+    padding: 0
 }
 
 #header img {
