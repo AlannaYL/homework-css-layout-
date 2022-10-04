@@ -35,14 +35,14 @@ body {
     padding: 10px;
 }
 
+/* 設置icon的位置大小 */
 #header i {
     font-size: 20px;
     text-align: center;
     align-items: center;
     vertical-align: 50%;
     margin: 0;
-    width: 40px;
-    height: 40px;
+    padding: 0 0;
 }
 
 #header .searchBar {
@@ -89,6 +89,13 @@ body {
 
 }
 
+#header .riGht p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -20px;
+    padding: 0px 10px;
+}
+
 #header .user {
     display: inline-block;
     width: 40px;
@@ -114,10 +121,19 @@ body {
 /* 側邊欄位---------------------------------------------- */
 #sidebar {
     width: 256px;
-    /* background: lightgreen; */
+    background: lightgreen;
     position: fixed;
     top: -120px;
     bottom: 0;
     left: 0;
     z-index: 1;
+}
+
+#sidebar .item_1 {
+    width: 256px;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    font-size: 1.5rem;
 }
