@@ -6,7 +6,7 @@ body {
 
 /* 搜尋欄--------------------------------------------- */
 #header {
-    background: #eee;
+    background: rgba(238, 238, 238, 0.8);
     width: 100%;
     height: 56px;
     padding: 0 16px;
@@ -66,15 +66,94 @@ body {
 
 #header .hstyle_r p:last-of-type {
     border: 1px solid blue;
+    background: rgba(238, 238, 238, 0.8);
     padding: .5rem;
 }
 
-/* tag區域與導覽區域-------------------------------------- */
+
+#header .hstyle_r p:last-of-type:hover {
+    background: rgba(195, 195, 195, 0.8);
+}
+
+/* 影片-------------------------------------- */
 #container {
     width: 100%;
     height: 100%;
-    /* background: lightpink; */
+    float: right;
+    position: relative;
 }
+
+#container .nav_tag {
+    width: 100%;
+    height: 56px;
+    background: rgba(238, 238, 238, 0.8);
+    list-style: none;
+    margin-top: 56px;
+    border-top: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    position: fixed;
+    z-index: 1;
+}
+
+#container .nav_tag ul {
+    text-align: center;
+
+}
+
+#container .nav_tag li {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 50px;
+    background: rgb(218, 218, 218);
+}
+
+#container .nav_tag li:hover {
+
+    background: rgb(195, 195, 195);
+}
+
+#container .row {
+    width: 85%;
+    height: 25%;
+    background: pink;
+    position: absolute;
+    top: 112px;
+    right: 26px;
+}
+
+#container .col {
+    display: inline-block;
+    background: skyblue;
+    width: 300px;
+    height: 100%;
+    padding: 0;
+    margin-left: 18px;
+}
+
+
+#container .col img {
+    width: 100%;
+    height: 150px;
+}
+
+#container .text {
+    float: left;
+
+}
+
+#container .sticker {
+    float: left;
+    display: inline;
+}
+
+#container .sticker img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 
 /* 側邊欄位---------------------------------------------- */
 #sidebar {
@@ -94,11 +173,12 @@ body {
 
 #sidebar .item_1 {
     width: 256px;
-    height: 30%;
+    height: 85%;
     position: absolute;
     top: 16%;
     left: 0;
     font-size: 1rem;
+    overflow: scroll;
 }
 
 #sidebar .item_1 hr {
