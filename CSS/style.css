@@ -5,9 +5,13 @@ body {
     background: rgb(225, 225, 225)
 }
 
+.h1 {
+    height: 100%;
+}
+
 /* 搜尋欄--------------------------------------------- */
 #header {
-    background: rgb(247, 247, 247);
+    background: rgb(247, 247, 247, 0.9);
     width: 100%;
     height: 56px;
     padding: 0 16px;
@@ -30,19 +34,46 @@ body {
 }
 
 #header i {
-    padding: 0 .5rem;
+    padding: 0 10px;
 }
 
-#header .hstyle_l {
+#header .search {
     display: inline;
     width: 100%;
     height: 100%;
     text-align: center;
     line-height: 56px;
     padding: 0 1rem;
-    font-size: 1rem;
+    font-size: 0;
     position: absolute;
 }
+
+#header .search input {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    width: 450px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+#header .search button {
+    margin: 0;
+    height: 36px;
+}
+
+#header .search p {
+    margin-left: 10px;
+    padding: 10px 5px;
+    border-radius: 50%;
+    background: rgb(238, 238, 238);
+}
+
+#header .search p:hover {
+    background: rgb(228, 228, 228);
+    cursor: pointer;
+}
+
+
 
 #header .logo {
     display: inline-block;
@@ -53,7 +84,8 @@ body {
     width: 120px;
     height: 40px;
     position: absolute;
-    line-height: 56px;
+    padding: 0;
+    margin-top: 5px;
 }
 
 #header .hstyle_r {
@@ -68,14 +100,14 @@ body {
 }
 
 #header .hstyle_r p:last-of-type {
-    border: 1px solid blue;
+    border: 1px solid rgb(84, 160, 190);
     background: rgba(238, 238, 238, 0.8);
-    padding: .5rem;
+    padding: 8px 10px 8px 8px;
+    color: rgb(108, 167, 190);
 }
 
 
 #header .hstyle_r p:last-of-type:hover {
-    background: rgba(195, 195, 195, 0.8);
     cursor: pointer;
 }
 
@@ -84,7 +116,7 @@ body {
     width: 100%;
     height: 100%;
     float: right;
-    position: relative;
+    position: absolute;
 }
 
 #container .nav_tag {
@@ -92,7 +124,7 @@ body {
     height: 56px;
     background: rgba(247, 247, 247, 0.8);
     list-style: none;
-    margin: 40px 0 0 0;
+    margin: 56px 0 0 0;
     border-top: 1px solid rgb(200, 200, 200);
     border-bottom: 1px solid rgb(200, 200, 200);
     position: fixed;
@@ -119,12 +151,13 @@ body {
 }
 
 #container .row {
-    width: 85%;
-    height: 26%;
+    width: 84%;
+    height: 25%;
     position: relative;
-    top: calc(100% - 85%);
-    left: calc(100% - 85%);
-    margin-top: 15px;
+    top: 15%;
+    left: 15%;
+    margin-top: 10px;
+    padding-left: 10px;
 
 }
 
@@ -135,15 +168,23 @@ body {
 
 #container .col {
     position: relative;
-
     display: inline-block;
     width: 350px;
     height: 100%;
     padding: 0;
     margin-left: 30px;
     overflow: hidden;
+    transition: 0.3s;
 }
 
+#container .col:hover {
+    position: relative;
+    transform: scale(1.1);
+    z-index: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
 
 #container .col img {
     width: 100%;
@@ -159,6 +200,7 @@ body {
 }
 
 #container .col .text {
+    margin-top: 5px;
     float: left;
     margin-left: 10px;
     width: 270px;
@@ -197,13 +239,18 @@ body {
     border-radius: 50%;
 }
 
+#container .row hr {
+    border: 3px solid rgba(195, 195, 195, 1);
+    margin-bottom: 15px;
+}
+
 
 /* 側邊欄位---------------------------------------------- */
 #sidebar {
     width: 256px;
     background: rgb(247, 247, 247);
     position: fixed;
-    top: -120px;
+    top: 0px;
     bottom: 0;
     left: 0;
     z-index: 1;
@@ -216,9 +263,9 @@ body {
 
 #sidebar .item_1 {
     width: 256px;
-    height: 85%;
+    height: 93%;
     position: absolute;
-    top: 16%;
+    top: 7%;
     left: 0;
     font-size: 1rem;
     overflow: scroll;
@@ -237,10 +284,33 @@ body {
 #sidebar .item_1 li {
     height: 40px;
     line-height: 2rem;
+    padding-top: 6px;
 }
 
 #sidebar .item_1 h1 {
     padding-left: 20px;
     font-size: 1rem;
     line-height: 2rem;
+}
+
+#sidebar li:not(.signtext):hover {
+    background: rgb(218, 218, 218);
+}
+
+#sidebar .sign li:first-child {
+    padding: 0 10px 0 25px;
+}
+
+#sidebar .sign li:last-child {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 40%;
+    border: 1px solid rgb(84, 160, 190);
+    line-height: 35px;
+    padding-right: 10px;
+    color: rgb(108, 167, 190);
+}
+
+#sidebar .sign li:last-child:hover {
+    cursor: pointer;
 }
